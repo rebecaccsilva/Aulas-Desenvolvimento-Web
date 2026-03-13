@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <h1>Tabelas</h1>
+</head>
+<style>
+    table, td,th{
+        border: 1.5px solid black;
+        border-collapse: collapse;
+    }
+
+
+    td, th {
+        padding: 5px 10px
+    }
+
+    th {
+        background-color: lightblue;
+        color:darkblue
+    }
+    * {  /*  é para todas as tags*/
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    table, tr:nth-child(odd) {
+        background-color: lightgray;
+        /* background-color: #ddd;*/
+    
+    }
+    table, tr:nth-child(even) {
+        background-color: white;
+        /* background-colo: #ddd;*/
+    }
+
+    caption {
+        font-size: large;
+        color: red
+    }
+    
+
+</style>
+<body>
+    <table border="3">
+        <caption><strong>Tabela</strong></caption>
+        <th colspan="3">Aluno</th>
+
+        <tr>
+            <td>
+                <center><strong>Nome:</strong></center>
+            </td>
+            <td><strong>Idade:</strong></td>
+            <td ><center><strong>Número:</strong></center></td>
+        </tr>
+        <tr>
+            <td> Fernando</td>
+            <td>45</td>
+            <td><font face='Courier' color="red">63683365759</font></td>
+        </tr>
+    </table>
+    <br>
+    <table border="5">
+        <tr>
+            <td bgcolor="purple"><strong>Primeiro Nome:</strongPrimeiro>
+            </td>
+            <td><font face="Arial">Manoela</font></td>
+        </tr>
+        <tr>
+            <td rowspan="2" bgcolor="purple"><strong><center>Telefones:</center></strong>
+            </td>
+            <td>8756986598</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td rowspan="3" bgcolor="purple"><strong><center>Email:</center></strong>
+            </td>
+            <td>fhuefhe@gmail.com</td>
+        </tr>
+        <tr>
+            <td>waofhueuj@gmail.com</td>
+        </tr>
+        <tr>
+            <td>hfoudodnijo@gmail.com</td>
+        </tr>
+    </table>
+</body>
+
+</html>
