@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: gray;
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    padding: 20px;
+}
+
+/* Duas colunas flutuando uma do lado da outra*/
+nav {
+    float: left;
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    background-color: black;
+}
+
+article {
+    float: left;
+    padding: 10px 0px 50px 0px;
+    width: 60%;
+    background-color:rgb(155, 72, 72);
+}
+aside {
+    float: left;
+    padding: 50px;
+    width: 40%;
+    text-align: center;
+    
+}
+/* Formatação do menu*/
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    float: left;
+
+}
+.horizontal-menu {
+    width: 205px;
+    overflow: hidden;
+}
+
+.horizontal-menu a {
+    background-color: lightcyan;
+    color: black;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.horizontal-menu a:hover {
+    background-color: gray;
+}
+
+/*Limpa o float após a seção*/
+section::after {
+    content: ""; 
+    display: table; 
+    clear: both;
+}
+
+footer {
+    background-color: gray ;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/*Layout responsivo - Muda para duas linhas até 600 pixels*/
+@media (max-width: 600px) {
+    nav, article {width: 100%; height: auto;}
+}
+
+

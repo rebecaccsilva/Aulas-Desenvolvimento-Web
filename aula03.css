@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: gray;
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    padding: 20px;
+}
+
+/* Duas colunas flutuando uma do lado da outra*/
+nav {
+    float: left;
+    width: 15%;
+    padding: 20px;
+    background-color: lightpink;
+}
+
+article {
+    float: left;
+    padding: 100px;
+    width: 55%;
+    background-color:bisque;
+}
+aside {
+    float: left;
+    padding: 50px;
+    width: 30%;
+    text-align: center;
+    
+}
+/* Formatação do menu*/
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.vertical-menu {
+    width: 200px;
+    overflow: hidden;
+}
+
+.vertical-menu a {
+    background-color: lightcyan;
+    color: black;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.vertical-menu a:hover {
+    background-color: rgb(230, 138, 153);
+}
+
+/*Limpa o float após a seção*/
+section::after {
+    content: ""; 
+    display: table; 
+    clear: both;
+}
+
+footer {
+    background-color: gray ;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/*Layout responsivo - Muda para duas linhas até 600 pixels*/
+@media (max-width: 600px) {
+    nav, article {width: 100%; height: auto;}
+}
+
+
